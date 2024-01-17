@@ -1,0 +1,71 @@
+@font-face {
+    font-family: inter;
+    src: url("fonts/Inter-VariableFont_slnt\,wght.ttf");
+}
+
+@font-face {
+    font-family: karla;
+    src: url("fonts/Karla-VariableFont_wght.ttf");
+}
+
+body{
+    background-color: #1F2937;
+    font-family: inter;
+    width: 550px;
+    height: 550px;
+}
+
+#first-section{
+    margin: 150px 40px 20px 40px;
+    border-bottom: 1px solid #2F3E53;
+    padding-bottom: 40px;
+    width: 406px;
+}
+
+h1{
+    color: white;
+    font-family: karla;
+    font-weight: 900;
+    margin-bottom: 12px;
+}
+
+#second-line-title{
+    color: #4ADF86;
+}
+
+#first-p{
+    color:#D5D4D8;
+    margin-top: 0px;
+}
+
+button{
+    background-color: #10B981;
+    color: white;
+    font-family: inter;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    margin-top: 25px;
+}
+
+button:active {
+    transform: scale(0.95); /* Reduce the size of the button to 95% when active */
+}
+
+#last-section{
+    display:flex;
+    margin: 20px 40px 40px 40px;
+    justify-content: space-between;
+    width: 406px;
+}
+
+.last-p{
+   color: #55F991; 
+   background-color: #273549;
+   padding: 10px 10px;
+   border-radius: 5px;
+   width: 150px;
+   height:13px;
+   font-size: 12px;
+   text-align: center;
+}

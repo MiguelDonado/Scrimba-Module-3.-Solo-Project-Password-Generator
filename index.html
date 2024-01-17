@@ -7,9 +7,16 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Generate a <span>random password</span></h1>
-    <h3>Never use an insecure password again</h3>
-    <button>Generate passwords</button>
+    <div id="first-section">
+        <h1>Generate a <br><span id="second-line-title">random password</span></h1>
+        <p id="first-p">Never use an insecure password again.</p>
+        <button onclick="generateTwoPassword()">Generate passwords</button>
+    </div>
+    <div id="last-section">
+        <p class="last-p" id="first-password-el"></p>
+        <p class="last-p" id="second-password-el"></p>
 
+    </div>
+    <script src="index.js"></script>
 </body>
 </html>
