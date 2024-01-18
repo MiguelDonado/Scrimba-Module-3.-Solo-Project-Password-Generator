@@ -48,6 +48,16 @@ button{
     margin-top: 25px;
 }
 
+input {
+    margin-left: 125px;
+    width: 50px;
+    border-radius: 5px;
+    border:none;
+    color: #10B981;
+    text-align: center;
+    font-weight: bold;
+    padding: 2px 4px;
+}
 button:active {
     transform: scale(0.95); /* Reduce the size of the button to 95% when active */
 }
@@ -68,4 +78,26 @@ button:active {
    height:13px;
    font-size: 12px;
    text-align: center;
+}
+
+#btn-inp{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#form{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0px;
+    margin-top: 25px;
+}
+
+label {
+    color: #10B981;
+    margin-right: 10px;
+}
+input {
+    margin-left: 0;
 }

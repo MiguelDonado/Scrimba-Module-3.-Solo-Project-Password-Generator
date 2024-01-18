@@ -9,7 +9,14 @@ secondPasswordEl = document.getElementById("second-password-el")
 
 function getRandomPassword(){
     let password = []
-    for (i = 0; i < 16; i++){
+    let passwordLength = document.getElementById('password-length-el').value
+
+    // Validate the input
+    if(isNaN(passwordLength) || passwordLength < 8 || passwordLength > 128) {
+        alert("Please enter a valid password length (between 8 and 128)");
+        return;
+    }
+    for (i = 0; i < passwordLength; i++){
         let number = Math.floor(Math.random() * characters.length)
         password.push(characters[number])
     }
@@ -18,6 +25,9 @@ function getRandomPassword(){
 
 function generateTwoPassword(){
     firstPassword = getRandomPassword()
+    if (!firstPassword){
+        return
+    }
     firstPasswordEl.textContent = firstPassword
     secondPassword = getRandomPassword()
     secondPasswordEl.textContent = secondPassword
