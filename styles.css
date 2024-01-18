@@ -15,7 +15,7 @@ body{
     height: 550px;
 }
 
-#first-section{
+.not-password-section{
     margin: 150px 40px 20px 40px;
     border-bottom: 1px solid #2F3E53;
     padding-bottom: 40px;
@@ -29,13 +29,19 @@ h1{
     margin-bottom: 12px;
 }
 
-#second-line-title{
+.second-line{
     color: #4ADF86;
 }
 
-#first-p{
+.slogan-p{
     color:#D5D4D8;
     margin-top: 0px;
+}
+
+.interactive-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 button{
@@ -46,23 +52,44 @@ button{
     border-radius: 5px;
     padding: 8px 16px;
     margin-top: 25px;
+    white-space: nowrap;
 }
 
-input {
-    margin-left: 125px;
-    width: 50px;
-    border-radius: 5px;
-    border:none;
-    color: #10B981;
-    text-align: center;
-    font-weight: bold;
-    padding: 2px 4px;
-}
 button:active {
     transform: scale(0.95); /* Reduce the size of the button to 95% when active */
 }
 
-#last-section{
+.input-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 0px;
+    margin-top: 25px;
+}
+
+.single-input{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 4px 0px;
+}
+
+input[type="checkbox"]{
+    margin-right: 0;
+}
+
+input[type="number"] {
+    width: 45px; /* Adjust this value as needed */
+}
+
+/*########################################################################*/
+/*########################################################################*/
+/*           SECTION WHERE TAKES PLACE THE 2 GENERATED PASSWORDS*/
+/*########################################################################*/
+/*########################################################################*/
+
+
+.password-section{
     display:flex;
     margin: 20px 40px 40px 40px;
     justify-content: space-between;
@@ -80,19 +107,7 @@ button:active {
    text-align: center;
 }
 
-#btn-inp{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 
-}
-
-#form{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 0px;
-    margin-top: 25px;
-}
 
 label {
     color: #10B981;
